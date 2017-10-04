@@ -18,19 +18,19 @@ public class RentACatTest {
     // Test RentACat.returnCat(cat c)
     // Test will check and see that when passed a rented cat the method will return true 
     @Test
-    public void testReturnCat_001() {
+    public void testReturnCat_000() {
         Cat theCat = mock(Cat.class);
-        when(theCat.getRented().thenReturn(true));
+        when(theCat.getRented()).thenReturn(true);
 
-        assertTrue(_rac.returnCat(theCat));
+        assertTrue(_rac.returnCat(theCat)));
     }
 
     // Test RentACat.returnCat(cat c)
     // Test will check and see that when passed a unrented cat the method will return true 
     @Test
-    public void testRentCat_001() {
+    public void testRentCat_000() {
         Cat theCat = mock(Cat.class);
-        when(theCat.getRented().thenReturn(false));
+        when(theCat.getRented()).thenReturn(false);
 
         assertTrue(_rac.rentCat(theCat));
     }
@@ -40,7 +40,7 @@ public class RentACatTest {
     @Test
     public void testRentCat_001() {
         Cat theCat = mock(Cat.class);
-        when(theCat.getRented().thenReturn(true));
+        when(theCat.getRented()).thenReturn(true);
 
         assertFalse(_rac.rentCat(theCat));
     }
