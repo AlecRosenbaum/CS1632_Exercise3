@@ -60,16 +60,34 @@ public class RentACatTest {
         assertEquals(mockDriver.random_move(), "moved");
     }
 
-    // TODO comments
+    // Test RentACat.returnCat(cat c)
+    // Test will check and see that when passed a rented cat the method will return true 
     @Test
-    public void testReturnCat() {
+    public void testReturnCat_001() {
+        Cat theCat = mock(Cat.class);
+        when(theCat.getRented().thenReturn(true));
 
+        assertTrue(_rac.returnCat(theCat));
     }
 
-    // TODO comments
+    // Test RentACat.returnCat(cat c)
+    // Test will check and see that when passed a unrented cat the method will return true 
     @Test
-    public void testRentCat() {
+    public void testRentCat_001() {
+        Cat theCat = mock(Cat.class);
+        when(theCat.getRented().thenReturn(false));
 
+        assertTrue(_rac.rentCat(theCat));
+    }
+    
+    // Test RentACat.returnCat(cat c)
+    // Test will check and see that when passed a rented cat the method will return false
+    @Test
+    public void testRentCat_001() {
+        Cat theCat = mock(Cat.class);
+        when(theCat.getRented().thenReturn(true));
+
+        assertFalse(_rac.rentCat(theCat));
     }
 
     // TODO comments
