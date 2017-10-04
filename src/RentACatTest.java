@@ -60,4 +60,29 @@ public class RentACatTest {
         assertEquals(mockDriver.random_move(), "moved");
     }
 
+    // TODO comments
+    @Test
+    public void testReturnCat() {
+
+    }
+
+    // TODO comments
+    @Test
+    public void testRentCat() {
+
+    }
+
+    // TODO comments
+    @Test
+    public void testListCats() {
+
+    }
+
+    // TODO comments
+    @Test
+    public void testCatExists() {
+
+    }
+
+
 }
