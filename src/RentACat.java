@@ -53,8 +53,13 @@ public class RentACat {
      */
     
     public String listCats(ArrayList<Cat> catList) {
-	// TODO
-	return "WRITE CODE FOR THIS";
+        String ret = "";
+        for (Cat cat: catList) {
+            if (!cat.getRented()) {
+                ret = ret + cat.toString() + "\n";
+            }
+        }
+	   return ret;
     }
 
     /**
@@ -68,8 +73,12 @@ public class RentACat {
      */
     
     public boolean catExists(int id, ArrayList<Cat> catList) {
-	// TODO
-	return false;
+        for (Cat cat: catList) {
+            if (cat.getId() == id) {
+                return true;
+            }
+        }
+	   return false;
     }
 
     /**
