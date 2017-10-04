@@ -26,11 +26,11 @@ public class Cat {
      * @param int id - the id number of this cat
      * @param String name - the name of this Cat
      */
-    
+
     public Cat(int id, String name) {
-	_rented = false;
-	_id = id;
-	_name = name;
+        _rented = false;
+        _id = id;
+        _name = name;
     }
 
     /**
@@ -38,7 +38,7 @@ public class Cat {
      */
 
     public void rentCat() {
-	_rented = true;
+        _rented = true;
     }
 
     /**
@@ -46,7 +46,7 @@ public class Cat {
      */
 
     public void returnCat() {
-	_rented = false;
+        _rented = false;
     }
 
     /**
@@ -55,7 +55,7 @@ public class Cat {
      */
 
     public String getName() {
-	return _name;
+        return _name;
     }
 
     /**
@@ -64,7 +64,7 @@ public class Cat {
      */
 
     public int getId() {
-	return _id;
+        return _id;
     }
 
     /**
@@ -73,7 +73,7 @@ public class Cat {
      */
 
     public boolean getRented() {
-	return _rented;
+        return _rented;
     }
 
     /**
@@ -83,10 +83,6 @@ public class Cat {
      */
 
     public String toString() {
-	return "ID " + _id + ". " + _name;
+        return "ID " + _id + ". " + _name;
     }
-    
-
-    
-    
 }
