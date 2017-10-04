@@ -22,7 +22,7 @@ public class RentACatTest {
         Cat theCat = mock(Cat.class);
         when(theCat.getRented()).thenReturn(true);
 
-        assertTrue(_rac.returnCat(theCat)));
+        assertTrue(_rac.returnCat(theCat));
     }
 
     // Test RentACat.returnCat(cat c)
